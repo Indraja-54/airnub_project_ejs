@@ -1,0 +1,51 @@
+<% layout("layouts/boilerplate") -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h3>New Poster for the WandeerWaluts</h3>
+    <form method="post" action="/listings">
+        <div class="mb-3">
+        <label for="title" class="form-label">title</label>
+        <input placeholder="Enter title" 
+        name="listing[title]" class="form-control"
+        type="text">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="Description">Description</label>
+            <textarea placeholder="Enter the message" name="listing[description]
+            " class="form-control" type="text"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="Location" class="form-label">Location:</label>
+            <input placeholder="Jaipur, Rajesthan" name="listing[locaion]" type="text" class="form-control">
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                   <input placeholder="India" name="listing[country]" type="text"
+                   class="form-control">
+                </div>
+
+            </div>
+            <div class="col-8">
+
+                <div class="mb-3">
+                    <label for="Price" class="form-label">Price</label>
+                    <input placeholder="1200" name="listing[price]" 
+                    class="form-control" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Image" class="form-label">Image</label>
+            <input placeholder="image Url" name="listing[image]" type="text"
+            class="form-control">
+        </div>
+        <br><br>
+        <button class="btn btn-dark" style="background-color: #fe424d !important; border:none !important">Submit</button>
+    </form>
+    <br><br>
+</div>
+</div>
+</body>
